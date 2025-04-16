@@ -177,7 +177,7 @@ public class SellerDaoJDBC implements SellerDao{
 		Map<Integer, Department> map = new HashMap<>();
 		
 			while (rs.next()) {
-				Department dep = map.get(rs.getInt("DemartmentId"));
+				Department dep = map.get(rs.getInt("DepartmentId"));
 				
 				if (dep == null) {
 					dep = instantiateDepartment(rs);
@@ -219,7 +219,7 @@ public class SellerDaoJDBC implements SellerDao{
 		Map<Integer, Department> map = new HashMap<>();
 		
 			while (rs.next()) {
-				Department dep = map.get(rs.getInt("DemartmentId"));
+				Department dep = map.get(rs.getInt("DepartmentId"));
 				
 				if (dep == null) {
 					dep = instantiateDepartment(rs);
